@@ -15,6 +15,6 @@ Route::apiResource('producto', ProductoController::class);
 Route::apiResource('empleados', EmpleadoController::class);
 Route::post('/login',[AuthController::class,'login']);
 Route::middleware('auth:sanctum')->group(function (){
-    Route:apiResource('productos',ProductoController::class)->names('api.productos');
+   route::apiResource('productos', ProductoController::class)->names('api.productos');
     
 });
